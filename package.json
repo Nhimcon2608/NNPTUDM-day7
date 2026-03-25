@@ -1,0 +1,24 @@
+{
+  "name": "nnptudm-day7",
+  "version": "1.0.0",
+  "description": "Inventory management API with Express and MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "check": "node --check src/app.js && node --check src/server.js && node --check src/config/database.js && node --check src/controllers/inventory.controller.js && node --check src/controllers/product.controller.js && node --check src/middlewares/error.middleware.js && node --check src/models/inventory.model.js && node --check src/models/product.model.js && node --check src/routes/inventory.routes.js && node --check src/routes/product.routes.js && node --check src/utils/inventory.utils.js && node --check scripts/smoke-test.js",
+    "smoke": "node scripts/smoke-test.js"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "inventory"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  }
+}
